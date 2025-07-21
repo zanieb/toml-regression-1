@@ -1,0 +1,10 @@
+[package]
+name = "toml_dupkey_repro"
+version = "0.1.0"
+edition = "2021"
+
+[dependencies]
+# alias the two versions so Cargo pulls them both
+toml8 = { package = "toml", version = "0.8.19" }
+toml9 = { package = "toml", version = "0.9.2" }
+
